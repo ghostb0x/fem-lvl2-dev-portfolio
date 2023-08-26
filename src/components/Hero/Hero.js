@@ -37,6 +37,7 @@ const HeroWrapper = styled.section`
 `;
 
 const HeaderPositioned = styled(Header)`
+  padding-top: 20px;
   position: absolute;
 `;
 

@@ -81,7 +81,6 @@ function Projects() {
             <TechName>HTML</TechName>
             <TechName>CSS</TechName>
             <TechName>Javascript</TechName>
-
           </Technologies>
           <Links>
             <Link href="">View Project</Link>
@@ -98,15 +97,12 @@ function Projects() {
             <TechName>HTML</TechName>
             <TechName>CSS</TechName>
             <TechName>Javascript</TechName>
-
           </Technologies>
           <Links>
             <Link href="">View Project</Link>
             <Link href="">View Code</Link>
           </Links>
         </ProjectBlock>
-
-
       </ProjectsGallery>
     </Wrapper>
   );

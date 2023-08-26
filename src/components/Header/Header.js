@@ -30,9 +30,7 @@ function Header({className}) {
 const Wrapper = styled.nav`
   display: flex;
   flex-direction: column;
-  background-color: var(--color-black);
   align-items: center;
-  padding-top: 20px;
 `;
 const Logo = styled.h3`
   font: var(--font-h3);
