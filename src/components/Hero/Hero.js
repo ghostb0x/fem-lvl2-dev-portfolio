@@ -12,7 +12,7 @@ function Hero() {
           alt="Adam's face"
         />
       </PictureWrapper>
-      
+
       <TextWrapper>
         <H1>
           Nice to meet you! <br /> I'm{' '}
@@ -22,7 +22,7 @@ function Hero() {
           Based in the UK, I'm a front-end developer passionate about
           building accessible web apps that users love.
         </P>
-        <ContactLink>Contact Me</ContactLink>
+        <ContactLink href="">Contact Me</ContactLink>
       </TextWrapper>
     </HeroWrapper>
   );
@@ -41,7 +41,6 @@ const HeaderPositioned = styled(Header)`
 `;
 
 const PictureWrapper = styled.picture``;
-
 
 const HeroImage = styled.img`
   width: 174px;
@@ -83,8 +82,6 @@ const ContactLink = styled.a`
   letter-spacing: 0.14288rem;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--color-green);
-
-  
 `;
 
 export default Hero;

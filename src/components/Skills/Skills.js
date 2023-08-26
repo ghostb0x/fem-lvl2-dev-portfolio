@@ -66,5 +66,4 @@ const Experience = styled.p`
   color: var(--color-gray);
 `;
 
-
 export default Skills;

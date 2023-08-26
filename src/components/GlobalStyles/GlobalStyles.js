@@ -80,6 +80,7 @@ html {
   --font-body-tablet: normal var(--font-weight-medium) 1.125rem/1.75rem var(--font-family-sans-serif);
   --font-body-mobile: normal var(--font-weight-medium) 1rem/1.625rem var(--font-family-sans-serif);
 
+  --font-project-tech: normal var(--font-weight-medium) 1.125rem/1.75rem var(--font-family-sans-serif);
 
   --font-form-fields: normal var(--font-weight-medium) 1rem/1.625rem var(--font-family-sans-serif);
 
