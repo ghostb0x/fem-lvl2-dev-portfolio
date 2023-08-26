@@ -12,6 +12,7 @@ function Hero() {
           alt="Adam's face"
         />
       </PictureWrapper>
+      
       <TextWrapper>
         <H1>
           Nice to meet you! <br /> I'm{' '}
@@ -27,8 +28,7 @@ function Hero() {
   );
 }
 
-const HeroWrapper = styled.main`
-  background: var(--color-black);
+const HeroWrapper = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,7 @@ const HeaderPositioned = styled(Header)`
 `;
 
 const PictureWrapper = styled.picture``;
+
 
 const HeroImage = styled.img`
   width: 174px;
