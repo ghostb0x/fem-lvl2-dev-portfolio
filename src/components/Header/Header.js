@@ -1,9 +1,9 @@
 import React from 'react';
 import { styled } from 'styled-components';
 
-function Header() {
+function Header({className}) {
   return (
-    <Wrapper>
+    <Wrapper className={className} >
       <Logo>adamkeyes</Logo>
       <Icons>
         <Icon
