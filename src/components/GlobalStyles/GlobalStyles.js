@@ -50,23 +50,40 @@ table {
 /* DESIGN TOKENS */
 html {
   --color-white: ${COLORS.white};
+  --color-gray: ${COLORS.gray};
   --color-offblack: ${COLORS.offblack};
-  --color-gray-100: ${COLORS.gray[100]};
-  --color-gray-300: ${COLORS.gray[300]};
-  --color-gray-500: ${COLORS.gray[500]};
-  --color-gray-700: ${COLORS.gray[700]};
-  --color-gray-900: ${COLORS.gray[900]};
-  --color-primary: ${COLORS.primary};
-  --color-secondary: ${COLORS.secondary};
-  --color-urgent: ${COLORS.urgent};
-
-  --font-weight-normal: ${WEIGHTS.normal};
+  --color-black: ${COLORS.black};
+  --color-green: ${COLORS.green};
   --font-weight-medium: ${WEIGHTS.medium};
   --font-weight-bold: ${WEIGHTS.bold};
-
-  --font-family-serif: ${FAMILIES.serif};
   --font-family-sans-serif: ${FAMILIES.sansSerif};
-  --font-family-logo: ${FAMILIES.logo};
+
+  /* font shorthand follows pattern: 
+  font-style font-weight font-size/line-height font-family */
+
+  /* h1 style used on hero main text and also Projects and Contact section headings */
+  --font-h1-desktop: normal var(--font-weight-bold) 5.5rem/5.5rem var(--font-family-sans-serif);
+  --font-h1-tablet: normal var(--font-weight-bold) 4.5rem/4.5rem var(--font-family-sans-serif);
+  --font-h1-mobile: normal var(--font-weight-bold) 2.5rem/2.5rem var(--font-family-sans-serif);
+
+  /* h2 style used on skills area listings  */
+  --font-h2-desktop: normal var(--font-weight-bold) 3rem/3.5rem var(--font-family-sans-serif);
+  --font-h2-tablet: normal var(--font-weight-bold) 3rem/3.5rem var(--font-family-sans-serif);
+  --font-h2-mobile: normal var(--font-weight-bold) 2rem/2.5rem var(--font-family-sans-serif);
+
+  /* h3 style used on portfolio project names and "logo" name*/
+  --font-h3: normal var(--font-weight-bold) 1.5rem/2rem var(--font-family-sans-serif);
+
+  --font-link: normal var(--font-weight-bold) 1rem/1.625rem var(--font-family-sans-serif);
+
+  --font-body-desktop: normal var(--font-weight-medium) 1.125rem/1.75rem var(--font-family-sans-serif);
+  --font-body-tablet: normal var(--font-weight-medium) 1.125rem/1.75rem var(--font-family-sans-serif);
+  --font-body-mobile: normal var(--font-weight-medium) 1rem/1.625rem var(--font-family-sans-serif);
+
+
+  --font-form-fields: normal var(--font-weight-medium) 1rem/1.625rem var(--font-family-sans-serif);
+
+
 }
 
 
@@ -101,7 +118,7 @@ html, body, #root {
 
 body {
   background-color: var(--color-gray-100);
-  font-family: 'Crimson Pro', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 /*
