@@ -69,6 +69,14 @@ const Wrapper = styled.section`
     align-items: start;
     row-gap: 52px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-left: 165px;
+    margin-right: 165px;
+    padding-top: 72px;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 58px;
+  }
 `;
 
 const SkillBlock = styled.article`
@@ -104,6 +112,11 @@ const Decoration = styled.img`
   position: absolute;
   right: -53%;
   bottom: -14%;
+
+  @media ${QUERIES.laptopAndUp} {
+    right: -38%;
+    bottom: -16%;
+  }
 `;
 
 export default Skills;
