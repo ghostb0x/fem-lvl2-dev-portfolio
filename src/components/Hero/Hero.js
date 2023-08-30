@@ -109,7 +109,7 @@ const HeaderPositioned = styled(Header)`
 
   @media ${QUERIES.laptopAndUp} {
     padding: 0;
-    width: calc(100% - (165px * 2));
+    width: calc(100vw - (165px * 2));
     padding-right: 30px;
   }
 `;

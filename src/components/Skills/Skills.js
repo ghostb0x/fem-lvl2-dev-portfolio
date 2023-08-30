@@ -74,8 +74,9 @@ const Wrapper = styled.section`
     margin-left: 165px;
     margin-right: 165px;
     padding-top: 72px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1.5fr 2fr;
     row-gap: 58px;
+    column-gap: 90px;
   }
 `;
 

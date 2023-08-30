@@ -60,6 +60,10 @@ const Wrapper = styled.footer`
   @media ${QUERIES.tabletAndUp} {
     padding: 60px 0 0 0;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    padding-top: 84px;
+  }
 `;
 
 const TopFooterWrapper = styled.section`
@@ -70,6 +74,14 @@ const TopFooterWrapper = styled.section`
   @media ${QUERIES.tabletAndUp} {
     padding: 0px 161px 0 161px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    padding: 0px 165px 0 165px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 220px;
+    align-items: flex-start;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -77,6 +89,11 @@ const TextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media ${QUERIES.laptopAndUp} {
+    align-items: flex-start;
+    text-align: start;
+  }
 `;
 
 const H2 = styled.h2`
@@ -85,6 +102,10 @@ const H2 = styled.h2`
 
   @media ${QUERIES.tabletAndUp} {
     font: var(--font-h1-tablet);
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    font: var(--font-h1-desktop);
   }
 `;
 
@@ -96,11 +117,20 @@ const P = styled.p`
   @media ${QUERIES.tabletAndUp} {
     font: var(--font-body-tablet);
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-top: 36px;
+  }
 `;
 
 const Form = styled.form`
   margin-top: 50px;
   position: relative;
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-top: 0px;
+
+  }
 `;
 
 const Decoration = styled.img`
@@ -111,6 +141,11 @@ const Decoration = styled.img`
   @media ${QUERIES.tabletAndUp} {
     left: -119%;
     bottom: -20%;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    left: -233%;
+    bottom: -14%;
   }
 `;
 
@@ -152,6 +187,10 @@ const Submit = styled.input`
   letter-spacing: 0.14288rem;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--color-green);
+
+  &:hover {
+    color: var(--color-green);
+  }
 `;
 
 const BottomFooterWrapper = styled.section`
@@ -165,6 +204,14 @@ const BottomFooterWrapper = styled.section`
     margin-right: 30px;
     padding-top: 30px;
     padding-bottom: 40px;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-left: 165px;
+    margin-right: 165px;
+    padding-top: 47px;
+    padding-bottom: 92px;
+
   }
 `;
 

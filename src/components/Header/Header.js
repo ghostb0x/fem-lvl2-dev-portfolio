@@ -72,7 +72,9 @@ const Icons = styled.div`
 
 const Icon = styled.img`
   width: 19.2px;
-
+  &:hover {
+    filter: invert(0.4) sepia(1) saturate(7.1) hue-rotate(93.6deg) brightness(1);
+  }
   @media ${QUERIES.tabletAndUp} {
     width: 24px;
   }

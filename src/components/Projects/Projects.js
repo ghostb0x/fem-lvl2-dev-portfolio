@@ -275,8 +275,9 @@ const Link = styled.a`
   letter-spacing: 0.14288rem;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--color-green);
-
+  opacity: 1;
   &:hover {
+    filter: invert(0.4) sepia(1) saturate(7.1) hue-rotate(93.6deg) brightness(1);
     color: var(--color-green);
   }
 `;
