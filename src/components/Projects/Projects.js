@@ -139,6 +139,10 @@ const ContactLink = styled.a`
   letter-spacing: 0.14288rem;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--color-green);
+
+  &:hover {
+    color: var(--color-green);
+  }
 `;
 
 const ProjectsGallery = styled.div`
@@ -197,6 +201,10 @@ const Link = styled.a`
   letter-spacing: 0.14288rem;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--color-green);
+
+  &:hover {
+    color: var(--color-green);
+  }
 `;
 
 export default Projects;

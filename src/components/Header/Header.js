@@ -66,6 +66,7 @@ const Icons = styled.div`
 
   @media ${QUERIES.tabletAndUp} {
     margin-top: 0;
+    gap: 32px;
   }
 `;
 

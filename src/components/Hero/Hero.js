@@ -24,6 +24,11 @@ function Hero() {
           src="./assets/images/image-profile-tablet.webp"
           alt="Adam's face"
         />
+
+        <HeroImageDesktop
+          src="./assets/images/image-profile-desktop.webp"
+          alt="Adam's face"
+        />
       </PictureWrapper>
       <HeaderPositioned />
 
@@ -52,7 +57,10 @@ const HeroWrapper = styled.section`
   @media ${QUERIES.tabletAndUp} {
     align-items: flex-start;
     padding-bottom: 60px;
+  }
 
+  @media ${QUERIES.laptopAndUp} {
+    padding: 39px 165px 219px 165px;
   }
 `;
 
@@ -63,7 +71,13 @@ const RingsDecoration = styled.img`
 
   @media ${QUERIES.tabletAndUp} {
     left: -221%;
-    top: 14%
+    top: 14%;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    /* left: -377%; */
+    left: -208.5%;
+    top: 17%;
   }
 `;
 
@@ -76,7 +90,13 @@ const CircleDecoration = styled.img`
     top: revert;
     bottom: 1%;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    bottom: 10%;
+    right: 85%;
+  }
 `;
+
 
 const HeaderPositioned = styled(Header)`
   padding-top: 20px;
@@ -86,6 +106,12 @@ const HeaderPositioned = styled(Header)`
     padding: 30px;
     padding-bottom: 0px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    padding: 0;
+    width: calc(100% - (165px * 2));
+    padding-right: 30px;
+  }
 `;
 
 const PictureWrapper = styled.picture`
@@ -93,6 +119,10 @@ const PictureWrapper = styled.picture`
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    right: 165px;
   }
 `;
 
@@ -113,6 +143,19 @@ const HeroImageTablet = styled.img`
     display: revert;
     width: 322px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    display: none;
+  }
+`;
+
+const HeroImageDesktop = styled.img`
+  display: none;
+
+  @media ${QUERIES.laptopAndUp} {
+    display: revert;
+    width: 445px;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -130,6 +173,10 @@ const TextWrapper = styled.div`
     align-items: flex-start;
     z-index: 1;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    padding-left: 0px;
+  }
 `;
 
 const H1 = styled.h1`
@@ -141,6 +188,10 @@ const H1 = styled.h1`
     font: var(--font-h1-tablet);
     text-align: revert;
     letter-spacing: -0.12781rem;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    font: var(--font-h1-desktop);
   }
 `;
 
@@ -154,6 +205,10 @@ const BreakTablet = styled.br`
   display: none;
   @media ${QUERIES.tabletAndUp} {
     display: revert;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    display: none;
   }
 `;
 
@@ -175,6 +230,11 @@ const P = styled.p`
     margin-top: 60px;
     width: 90%;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-top: 43px;
+    width: 60%;
+  }
 `;
 
 const ContactLink = styled.a`
@@ -185,10 +245,18 @@ const ContactLink = styled.a`
   letter-spacing: 0.14288rem;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--color-green);
-  
+
+  &:hover {
+    color: var(--color-green);
+  }
+
   @media ${QUERIES.tabletAndUp} {
     text-align: revert;
     margin-top: 34px;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-top: 66px;
   }
 `;
 
