@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import { styled } from 'styled-components';
+import { QUERIES } from '../../constants';
 
 function Footer() {
   return (
@@ -15,24 +16,23 @@ function Footer() {
           </P>
         </TextWrapper>
 
-
         <Form id="contact">
           <Decoration
             src="./assets/images/pattern-rings.svg"
             alt=""
-            />
+          />
           <TextInput
             id="name"
             name="name"
             type="text"
             placeholder="NAME"
-            />
+          />
           <TextInput
             id="email"
             name="email"
             type="text"
             placeholder="EMAIL"
-            />
+          />
           <TextArea
             id="message"
             form="contact"
@@ -56,12 +56,20 @@ function Footer() {
 const Wrapper = styled.footer`
   background-color: var(--color-offblack);
   padding: 60px 16px 0 16px;
+
+  @media ${QUERIES.tabletAndUp} {
+    padding: 60px 0 0 0;
+  }
 `;
 
 const TopFooterWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media ${QUERIES.tabletAndUp} {
+    padding: 0px 161px 0 161px;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -74,12 +82,20 @@ const TextWrapper = styled.div`
 const H2 = styled.h2`
   font: var(--font-h1-mobile);
   color: var(--color-white);
+
+  @media ${QUERIES.tabletAndUp} {
+    font: var(--font-h1-tablet);
+  }
 `;
 
 const P = styled.p`
   margin-top: 20px;
   font: var(--font-body-mobile);
   color: var(--color-gray);
+
+  @media ${QUERIES.tabletAndUp} {
+    font: var(--font-body-tablet);
+  }
 `;
 
 const Form = styled.form`
@@ -91,6 +107,11 @@ const Decoration = styled.img`
   position: absolute;
   left: -100%;
   bottom: 5%;
+
+  @media ${QUERIES.tabletAndUp} {
+    left: -119%;
+    bottom: -20%;
+  }
 `;
 
 const TextInput = styled.input`
@@ -137,6 +158,14 @@ const BottomFooterWrapper = styled.section`
   margin-top: 87px;
   padding: 40px 0 60px 0;
   border-top: 1.5px solid var(--color-white);
+
+  @media ${QUERIES.tabletAndUp} {
+    margin-top: 92px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
 `;
 
 export default Footer;
