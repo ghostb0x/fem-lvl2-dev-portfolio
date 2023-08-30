@@ -20,6 +20,7 @@ function App() {
 
 const Main = styled.main`
   background: var(--color-black);
+  overflow-x: clip;
 `;
 
 export default App;

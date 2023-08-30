@@ -1,12 +1,13 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import { QUERIES } from '../../constants';
 
 function Projects() {
   return (
     <Wrapper>
       <TitleWrapper>
         <Title>Projects</Title>
-        <ContactLink href="">Contact Me</ContactLink>
+        <ContactLink href="#contact-form">Contact Me</ContactLink>
       </TitleWrapper>
 
       <ProjectsGallery>
@@ -110,17 +111,25 @@ function Projects() {
 
 const Wrapper = styled.section`
   padding: 80px 16px;
+
+  @media ${QUERIES.tabletAndUp} {
+    padding: 100px 30px;
+  }
 `;
 
 const TitleWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 `;
 
 const Title = styled.h2`
   font: var(--font-h1-mobile);
   color: var(--color-white);
+
+  @media ${QUERIES.tabletAndUp} {
+    font: var(--font-h1-tablet);
+  }
 `;
 
 const ContactLink = styled.a`
@@ -138,6 +147,13 @@ const ProjectsGallery = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 40px;
+
+  @media ${QUERIES.tabletAndUp} {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 24px;
+  }
 `;
 
 const ProjectBlock = styled.article``;
