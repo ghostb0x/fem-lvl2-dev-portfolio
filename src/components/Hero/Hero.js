@@ -7,6 +7,14 @@ function Hero() {
     <HeroWrapper>
       <HeaderPositioned />
       <PictureWrapper>
+        <RingsDecoration
+          src="./assets/images/pattern-rings.svg"
+          alt=""
+        />
+        <CircleDecoration
+          src="./assets/images/pattern-circle.svg"
+          alt=""
+        />
         <HeroImage
           src="./assets/images/image-profile-mobile.webp"
           alt="Adam's face"
@@ -36,6 +44,18 @@ const HeroWrapper = styled.section`
   padding-bottom: 80px;
 `;
 
+const RingsDecoration = styled.img`
+  position: absolute;
+  left: -80%;
+  top: 17%;
+`;
+
+const CircleDecoration = styled.img`
+  position: absolute;
+  right: -16%;
+  top: 32%;
+`;
+
 const HeaderPositioned = styled(Header)`
   padding-top: 20px;
   position: absolute;
@@ -46,6 +66,7 @@ const PictureWrapper = styled.picture``;
 const HeroImage = styled.img`
   width: 174px;
   height: auto;
+  opacity: 0.99;
 `;
 
 const TextWrapper = styled.div`

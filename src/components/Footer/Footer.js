@@ -16,10 +16,33 @@ function Footer() {
         </TextWrapper>
 
         <Form id="contact">
-          <TextInput id="name" name="name" type="text" placeholder="NAME" />
-          <TextInput id="email" name="email" type="text" placeholder="EMAIL" />
-          <TextArea id="message" form="contact" name="message" type="textarea" placeholder="MESSAGE" />
-          <Submit type="submit" value="SEND MESSAGE" />
+          <Decoration
+            src="./assets/images/pattern-rings.svg"
+            alt=""
+          />
+          <TextInput
+            id="name"
+            name="name"
+            type="text"
+            placeholder="NAME"
+          />
+          <TextInput
+            id="email"
+            name="email"
+            type="text"
+            placeholder="EMAIL"
+          />
+          <TextArea
+            id="message"
+            form="contact"
+            name="message"
+            type="textarea"
+            placeholder="MESSAGE"
+          />
+          <Submit
+            type="submit"
+            value="SEND MESSAGE"
+          />
         </Form>
       </TopFooterWrapper>
       <BottomFooterWrapper>
@@ -60,6 +83,13 @@ const P = styled.p`
 
 const Form = styled.form`
   margin-top: 50px;
+  position: relative;
+`;
+
+const Decoration = styled.img`
+  position: absolute;
+  left: -100%;
+  bottom: 5%;
 `;
 
 const TextInput = styled.input`
@@ -102,12 +132,10 @@ const Submit = styled.input`
   border-bottom: 2px solid var(--color-green);
 `;
 
-
 const BottomFooterWrapper = styled.section`
   margin-top: 87px;
   padding: 40px 0 60px 0;
   border-top: 1.5px solid var(--color-white);
-  
 `;
 
 export default Footer;

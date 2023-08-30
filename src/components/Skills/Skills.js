@@ -33,6 +33,11 @@ function Skills() {
         <SkillName>Sass</SkillName>
         <Experience>3 Years Experience</Experience>
       </SkillBlock>
+
+      <Decoration
+        src="./assets/images/pattern-rings.svg"
+        alt=""
+      />
     </Wrapper>
   );
 }
@@ -48,6 +53,7 @@ const Wrapper = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  position: relative;
 `;
 
 const SkillBlock = styled.article`
@@ -64,6 +70,12 @@ const SkillName = styled.strong`
 const Experience = styled.p`
   font: var(--font-body-mobile);
   color: var(--color-gray);
+`;
+
+const Decoration = styled.img`
+  position: absolute;
+  right: -100%;
+  bottom: -11%;
 `;
 
 export default Skills;
