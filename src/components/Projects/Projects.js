@@ -14,6 +14,10 @@ function Projects() {
         <ProjectBlock>
           <PictureWrapper>
             <Image src="./assets/images/thumbnail-project-1-small.webp" />
+            <DesktopOverlays>
+              <Link href="">View Project</Link>
+              <Link href="">View Code</Link>
+            </DesktopOverlays>
           </PictureWrapper>
           <ProjectName>Design Portfolio</ProjectName>
           <Technologies>
@@ -29,6 +33,10 @@ function Projects() {
         <ProjectBlock>
           <PictureWrapper>
             <Image src="./assets/images/thumbnail-project-2-small.webp" />
+            <DesktopOverlays>
+              <Link href="">View Project</Link>
+              <Link href="">View Code</Link>
+            </DesktopOverlays>
           </PictureWrapper>
           <ProjectName>E-Learning Landing Page</ProjectName>
           <Technologies>
@@ -44,6 +52,10 @@ function Projects() {
         <ProjectBlock>
           <PictureWrapper>
             <Image src="./assets/images/thumbnail-project-3-small.webp" />
+            <DesktopOverlays>
+              <Link href="">View Project</Link>
+              <Link href="">View Code</Link>
+            </DesktopOverlays>
           </PictureWrapper>
           <ProjectName>Todo Web App</ProjectName>
           <Technologies>
@@ -60,6 +72,10 @@ function Projects() {
         <ProjectBlock>
           <PictureWrapper>
             <Image src="./assets/images/thumbnail-project-4-small.webp" />
+            <DesktopOverlays>
+              <Link href="">View Project</Link>
+              <Link href="">View Code</Link>
+            </DesktopOverlays>
           </PictureWrapper>
           <ProjectName>Entertainment Web App</ProjectName>
           <Technologies>
@@ -76,6 +92,10 @@ function Projects() {
         <ProjectBlock>
           <PictureWrapper>
             <Image src="./assets/images/thumbnail-project-5-small.webp" />
+            <DesktopOverlays>
+              <Link href="">View Project</Link>
+              <Link href="">View Code</Link>
+            </DesktopOverlays>
           </PictureWrapper>
           <ProjectName>Memory Game</ProjectName>
           <Technologies>
@@ -92,6 +112,10 @@ function Projects() {
         <ProjectBlock>
           <PictureWrapper>
             <Image src="./assets/images/thumbnail-project-6-small.webp" />
+            <DesktopOverlays>
+              <Link href="">View Project</Link>
+              <Link href="">View Code</Link>
+            </DesktopOverlays>
           </PictureWrapper>
           <ProjectName>Art Gallery Showcase</ProjectName>
           <Technologies>
@@ -115,6 +139,10 @@ const Wrapper = styled.section`
   @media ${QUERIES.tabletAndUp} {
     padding: 100px 30px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    padding: 140px 165px;
+  }
 `;
 
 const TitleWrapper = styled.div`
@@ -129,6 +157,10 @@ const Title = styled.h2`
 
   @media ${QUERIES.tabletAndUp} {
     font: var(--font-h1-tablet);
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    font: var(--font-h1-desktop);
   }
 `;
 
@@ -158,16 +190,55 @@ const ProjectsGallery = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 60px 24px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-top: 80px;
+    gap: 70px 30px;
+  }
 `;
 
 const ProjectBlock = styled.article``;
 
-const PictureWrapper = styled.picture``;
+const DesktopOverlays = styled.div`
+  display: none;
+
+  @media ${QUERIES.laptopAndUp} {
+    position: absolute;
+    background-color: var(--color-offblack);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+
+    &:hover {
+      opacity: 0.8;
+      transition: opacity .2s ease-in; 
+    }
+  }
+`;
+
+const PictureWrapper = styled.picture`
+  @media ${QUERIES.laptopAndUp} {
+    position: relative;
+
+  }
+`;
 
 const Image = styled.img`
   width: 100%;
   display: block;
+
+  @media ${QUERIES.laptopAndUp} {
+  }
 `;
+
+
 
 const ProjectName = styled.h3`
   margin-top: 20px;
@@ -192,6 +263,9 @@ const Links = styled.div`
   margin-top: 20px;
   display: flex;
   gap: 30px;
+
+  @media ${QUERIES.laptopAndUp} {
+    display: none;
 `;
 
 const Link = styled.a`
