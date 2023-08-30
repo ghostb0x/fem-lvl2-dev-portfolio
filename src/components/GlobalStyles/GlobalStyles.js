@@ -73,6 +73,8 @@ html {
 
   /* h3 style used on portfolio project names and "logo" name*/
   --font-h3: normal var(--font-weight-bold) 1.5rem/2rem var(--font-family-sans-serif);
+  --font-h3-tablet-up: normal var(--font-weight-bold) 2rem/2rem var(--font-family-sans-serif);
+
 
   --font-link: normal var(--font-weight-bold) 1rem/1.625rem var(--font-family-sans-serif);
 
