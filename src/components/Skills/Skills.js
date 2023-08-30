@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import { QUERIES } from '../../constants';
 
 function Skills() {
   return (
@@ -54,28 +55,55 @@ const Wrapper = styled.section`
   align-items: center;
   gap: 24px;
   position: relative;
+
+  @media ${QUERIES.tabletAndUp} {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 52px;
+    padding-bottom: revert;
+    border-bottom: revert;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: start;
+    align-items: start;
+    row-gap: 52px;
+  }
 `;
 
 const SkillBlock = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media ${QUERIES.tabletAndUp} {
+    align-items: flex-start;
+    gap: 14px;
+  }
 `;
 
 const SkillName = styled.strong`
   font: var(--font-h2-mobile);
   color: var(--color-white);
+
+  @media ${QUERIES.tabletAndUp} {
+    font: var(--font-h2-tablet);
+  }
 `;
 
 const Experience = styled.p`
   font: var(--font-body-mobile);
   color: var(--color-gray);
+
+  @media ${QUERIES.tabletAndUp} {
+    font: var(--font-body-tablet);
+  }
 `;
 
 const Decoration = styled.img`
   position: absolute;
-  right: -100%;
-  bottom: -11%;
+  right: -53%;
+  bottom: -14%;
 `;
 
 export default Skills;

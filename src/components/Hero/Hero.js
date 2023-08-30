@@ -36,7 +36,7 @@ function Hero() {
           Based in the UK, I'm a front-end developer passionate about
           building accessible web apps that users love.
         </P>
-        <ContactLink href="">Contact Me</ContactLink>
+        <ContactLink href="#contact-form">Contact Me</ContactLink>
       </TextWrapper>
     </HeroWrapper>
   );
@@ -51,6 +51,8 @@ const HeroWrapper = styled.section`
 
   @media ${QUERIES.tabletAndUp} {
     align-items: flex-start;
+    padding-bottom: 60px;
+
   }
 `;
 
@@ -67,7 +69,7 @@ const RingsDecoration = styled.img`
 
 const CircleDecoration = styled.img`
   position: absolute;
-  right: -16%;
+  right: -19%;
   top: 32%;
 
   @media ${QUERIES.tabletAndUp} {

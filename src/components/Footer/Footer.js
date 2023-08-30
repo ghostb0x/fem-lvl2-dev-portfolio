@@ -4,7 +4,7 @@ import { styled } from 'styled-components';
 
 function Footer() {
   return (
-    <Wrapper>
+    <Wrapper id="contact-form">
       <TopFooterWrapper>
         <TextWrapper>
           <H2>Contact</H2>
@@ -15,23 +15,24 @@ function Footer() {
           </P>
         </TextWrapper>
 
+
         <Form id="contact">
           <Decoration
             src="./assets/images/pattern-rings.svg"
             alt=""
-          />
+            />
           <TextInput
             id="name"
             name="name"
             type="text"
             placeholder="NAME"
-          />
+            />
           <TextInput
             id="email"
             name="email"
             type="text"
             placeholder="EMAIL"
-          />
+            />
           <TextArea
             id="message"
             form="contact"

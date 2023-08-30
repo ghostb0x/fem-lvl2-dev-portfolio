@@ -2,27 +2,38 @@ import React from 'react';
 import { styled } from 'styled-components';
 import { QUERIES } from '../../constants';
 
-function Header({className}) {
+function Header({ className }) {
   return (
-    <Wrapper className={className} >
+    <Wrapper className={className}>
       <Logo>adamkeyes</Logo>
       <Icons>
-        <Icon
-          src="./assets/images/icon-github.svg"
-          alt="Github Logo - see my github"
-        />
-        <Icon
-          src="./assets/images/icon-frontend-mentor.svg"
-          alt="Frontend Mentor Logo - see my Frontend Mentor profile"
-        />
-        <Icon
-          src="./assets/images/icon-linkedin.svg"
-          alt="Linkedin Logo - see my LinkedIn profile"
-        />
-        <Icon
-          src="./assets/images/icon-twitter.svg"
-          alt="Twitter Logo - see my Twitter profile"
-        />
+        <a href="github.com">
+          <Icon
+            src="./assets/images/icon-github.svg"
+            alt="Github Logo - see my github"
+          />
+        </a>
+
+        <a href="frontendmentor.io">
+          <Icon
+            src="./assets/images/icon-frontend-mentor.svg"
+            alt="Frontend Mentor Logo - see my Frontend Mentor profile"
+          />
+        </a>
+
+        <a href="linkedin.com">
+          <Icon
+            src="./assets/images/icon-linkedin.svg"
+            alt="Linkedin Logo - see my LinkedIn profile"
+          />
+        </a>
+
+        <a href="twitter.com">
+          <Icon
+            src="./assets/images/icon-twitter.svg"
+            alt="Twitter Logo - see my Twitter profile"
+          />
+        </a>
       </Icons>
     </Wrapper>
   );
