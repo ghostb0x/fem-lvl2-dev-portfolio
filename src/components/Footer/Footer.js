@@ -4,6 +4,7 @@ import { styled } from 'styled-components';
 import { QUERIES } from '../../constants';
 
 function Footer() {
+    
   return (
     <Wrapper id="contact-form">
       <TopFooterWrapper>
@@ -16,7 +17,7 @@ function Footer() {
           </P>
         </TextWrapper>
 
-        <Form id="contact">
+        <Form novalidate id="contact">
           <Decoration
             src="./assets/images/pattern-rings.svg"
             alt=""
@@ -25,12 +26,14 @@ function Footer() {
             id="name"
             name="name"
             type="text"
+            required
             placeholder="NAME"
           />
-          <TextInput
+          <TextInput           
             id="email"
             name="email"
-            type="text"
+            type="email"
+            required
             placeholder="EMAIL"
           />
           <TextArea
@@ -38,6 +41,7 @@ function Footer() {
             form="contact"
             name="message"
             type="textarea"
+            required
             placeholder="MESSAGE"
           />
           <Submit
