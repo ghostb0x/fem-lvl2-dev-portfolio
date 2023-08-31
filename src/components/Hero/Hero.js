@@ -114,7 +114,7 @@ const HeaderPositioned = styled(Header)`
   }
 `;
 
-const PictureWrapper = styled.picture`
+const PictureWrapper = styled.div`
   @media ${QUERIES.tabletAndUp} {
     position: absolute;
     right: 0;

@@ -91,7 +91,7 @@ const SkillBlock = styled.article`
   }
 `;
 
-const SkillName = styled.strong`
+const SkillName = styled.h3`
   font: var(--font-h2-mobile);
   color: var(--color-white);
 

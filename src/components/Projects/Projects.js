@@ -13,7 +13,7 @@ function Projects() {
       <ProjectsGallery>
         <ProjectBlock>
           <PictureWrapper>
-            <Image src="./assets/images/thumbnail-project-1-small.webp" />
+            <Image src="./assets/images/thumbnail-project-1-small.webp" alt="Project 1 screenshot - Design Portfolio" />
             <DesktopOverlays>
               <Link href="">View Project</Link>
               <Link href="">View Code</Link>
@@ -32,7 +32,7 @@ function Projects() {
 
         <ProjectBlock>
           <PictureWrapper>
-            <Image src="./assets/images/thumbnail-project-2-small.webp" />
+            <Image src="./assets/images/thumbnail-project-2-small.webp" alt="Project 2 screenshot - E-Learning Landing Page"/>
             <DesktopOverlays>
               <Link href="">View Project</Link>
               <Link href="">View Code</Link>
@@ -51,7 +51,7 @@ function Projects() {
 
         <ProjectBlock>
           <PictureWrapper>
-            <Image src="./assets/images/thumbnail-project-3-small.webp" />
+            <Image src="./assets/images/thumbnail-project-3-small.webp" alt="Project 3 screenshot - Todo Web App" />
             <DesktopOverlays>
               <Link href="">View Project</Link>
               <Link href="">View Code</Link>
@@ -71,7 +71,7 @@ function Projects() {
 
         <ProjectBlock>
           <PictureWrapper>
-            <Image src="./assets/images/thumbnail-project-4-small.webp" />
+            <Image src="./assets/images/thumbnail-project-4-small.webp" alt="Project 4 screenshot - Entertainment Web App"/>
             <DesktopOverlays>
               <Link href="">View Project</Link>
               <Link href="">View Code</Link>
@@ -91,7 +91,7 @@ function Projects() {
 
         <ProjectBlock>
           <PictureWrapper>
-            <Image src="./assets/images/thumbnail-project-5-small.webp" />
+            <Image src="./assets/images/thumbnail-project-5-small.webp" alt="Project 5 screenshot - Memory Game"/>
             <DesktopOverlays>
               <Link href="">View Project</Link>
               <Link href="">View Code</Link>
@@ -111,7 +111,7 @@ function Projects() {
 
         <ProjectBlock>
           <PictureWrapper>
-            <Image src="./assets/images/thumbnail-project-6-small.webp" />
+            <Image src="./assets/images/thumbnail-project-6-small.webp" alt="Project 6 screenshot - Art Gallery Showcase"/>
             <DesktopOverlays>
               <Link href="">View Project</Link>
               <Link href="">View Code</Link>
@@ -223,7 +223,7 @@ const DesktopOverlays = styled.div`
   }
 `;
 
-const PictureWrapper = styled.picture`
+const PictureWrapper = styled.div`
   @media ${QUERIES.laptopAndUp} {
     position: relative;
 

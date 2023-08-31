@@ -17,7 +17,7 @@ function Footer() {
           </P>
         </TextWrapper>
 
-        <Form novalidate id="contact">
+        <Form id="contact">
           <Decoration
             src="./assets/images/pattern-rings.svg"
             alt=""
@@ -40,7 +40,6 @@ function Footer() {
             id="message"
             form="contact"
             name="message"
-            type="textarea"
             required
             placeholder="MESSAGE"
           />
