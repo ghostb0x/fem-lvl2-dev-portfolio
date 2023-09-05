@@ -16,4 +16,4 @@ This is my default way of building anything at present, as I have a customized b
 
 ## Hosted on GitHub Pages
 
-(Check out the live page)[https://ghostb0x.github.io/fem-lvl2-dev-portfolio/] to get a feel for the responsive styles!
+[Check out the live page](https://ghostb0x.github.io/fem-lvl2-dev-portfolio/) to get a feel for the responsive styles!
